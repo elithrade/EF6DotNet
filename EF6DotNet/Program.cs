@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 
 namespace EF6DotNet
 {
@@ -14,6 +15,9 @@ namespace EF6DotNet
                 ctx.Students.Add(bill);
                 ctx.SaveChanges();                
             }
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadLine();
         }
     }
 }
