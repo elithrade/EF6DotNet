@@ -75,6 +75,8 @@
     <Compile Include="SchoolDbContext.cs" />
     <Compile Include="SchoolDbInitializer.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="StudentInfo.cs" />
+    <Compile Include="Teacher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

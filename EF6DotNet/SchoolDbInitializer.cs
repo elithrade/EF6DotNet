@@ -22,6 +22,20 @@ namespace EF6DotNet
             students.ForEach(s => context.Students.Add(s));
             context.SaveChanges();
 
+            var studentAddresses = new List<StudentInfo>
+            {
+                new StudentInfo{ID = 1,  DateOfBirth = new DateTime(1989, 10, 1)},
+                new StudentInfo{ID = 2, DateOfBirth = new DateTime(1990, 11, 1)},
+                new StudentInfo{ID = 3, DateOfBirth = new DateTime(1987, 8, 7)},
+                new StudentInfo{ID = 4, DateOfBirth = new DateTime(1985, 8, 17)},
+                new StudentInfo{ID = 5, DateOfBirth = new DateTime(1986, 12, 4)},
+                new StudentInfo{ID = 6, DateOfBirth = new DateTime(1988, 9, 7)},
+                new StudentInfo{ID = 7, DateOfBirth = new DateTime(1992, 12, 17)},
+                new StudentInfo{ID = 8, DateOfBirth = new DateTime(1984, 12, 1)},
+            };
+            studentAddresses.ForEach(a => context.Infos.Add(a));
+            context.SaveChanges();
+
             var courses = new List<Course>
             {
                 new Course{CourseID=1050,Title="Chemistry",Credits=3,},
