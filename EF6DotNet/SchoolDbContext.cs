@@ -5,6 +5,10 @@ namespace EF6DotNet
 {
     public class SchoolDbContext : DbContext
     {
+        public SchoolDbContext() : base()
+        {
+        }
+
         public SchoolDbContext(string connectionString) : base(connectionString)
         {
             // Database initialization strategies.
